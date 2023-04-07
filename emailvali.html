@@ -1,0 +1,26 @@
+<html>
+<head><title>email validation</title>
+</head>
+<body>
+<h1>Email validation</h1>
+<input type="email" name="email" id="email" required >
+
+<input type="submit" name="submit" onClick="vali()">
+</body>
+<script>  
+function vali()  
+{  
+var x=document.getElementById("email").value;  
+var a=x.indexOf("@");  
+var d=x.lastIndexOf(".");  
+if (a<1 || d<a+2 || d+2>=x.length){  
+alert("Please enter a valid e-mail address");  
+return false;
+}  
+else
+{
+alert("correct");
+}
+}  
+</script>  
+</html>
